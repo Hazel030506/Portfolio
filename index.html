@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hazel's Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <video autoplay loop muted plays-inline class="back-vid">
+    <source src="iso-republic-milky-way-flying (2).mp4" type="video/mp4">
+  </video>
+  <section class="main-section">
+    <nav>
+      <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #4acfee;">Wel</span>come</h1>
+      <ul>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a class="active" href="#">Home </a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Experience</a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Skills</a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-info">
+        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Hi, I'm Hazel</h1>
+        <div class="text-container">
+          I'M A <span class="changing-text">BSIT</span>
+      </div>
+  
+      <script>
+          const words = ["BSIT","WMT II_2", "STUDENT", "2nd YEAR", "PRETTY"];
+          let index = 0;
+          const textElement = document.querySelector(".changing-text");
+  
+          function changeText() {
+              textElement.style.opacity = 0; 
+  
+              setTimeout(() => {
+                  index = (index + 1) % words.length;
+                  textElement.textContent = words[index];
+                  textElement.style.opacity = 1; 
+              }, 500);
+          }
+  
+          setInterval(changeText, 2000); 
+      </script>
+  
+        <p data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1000">Hello! I'm Hazel, a passionate BSIT student with a drive to explore the ever-evolving landscape of technology. From crafting clean code to understanding complex systems, I'm constantly seeking new challenges and opportunities to expand my skills. This portfolio is a glimpse into my journey, showcasing projects and experiences that reflect my dedication to learning and problem-solving within the world of information technology.</p>
+        <div class="Buttons">
+          <button class="btn" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="1100">Get to know me</button> 
+          <ul class="ul-icons">
+            <li><a href="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200"><i class='bx bxl-github'></i></a></li>
+            <li><a href="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1300"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400" ><i class='bx bxl-youtube'></i></a></li>
+            <li><a href="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500"><i class='bx bxl-facebook-circle'></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero-img" data-aos="zoom-in-left" data-aos-duration="2500">
+        <img src="meee.png" alt="person-img" >
+      </div>
+    </div>
+
+    <div class="info-sec">
+      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1600">
+        <h1>19</h1>
+        <p>Years of <br> Age</p>
+      </div>
+      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1700">
+        <h1>7+</h1>
+        <p>Technical <br> Skills</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
